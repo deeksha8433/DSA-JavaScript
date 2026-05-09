@@ -13,6 +13,7 @@ This repository contains my daily DSA practice problems in JavaScript.
 
 ## Language Used
 - JavaScript
+// Iterate through array
 // Time Complexity: O(n)
 // Space Complexity: O(n)
 ## Day 3 Progress
