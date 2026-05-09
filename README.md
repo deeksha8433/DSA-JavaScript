@@ -13,5 +13,9 @@ This repository contains my daily DSA practice problems in JavaScript.
 
 ## Language Used
 - JavaScript
+// Time Complexity: O(n)
+// Space Complexity: O(n)
 ## Day 3 Progress
 Learning GitHub consistency.
+## Progress Tracker
+Started maintaining daily DSA consistency.
