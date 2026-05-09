@@ -13,3 +13,5 @@ This repository contains my daily DSA practice problems in JavaScript.
 
 ## Language Used
 - JavaScript
+## Day 3 Progress
+Learning GitHub consistency.
