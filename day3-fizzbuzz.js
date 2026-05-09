@@ -22,6 +22,8 @@ var fizzBuzz = function(n) {
 
     // Loop from 1 to n
     for(let i = 1; i <= n; i++) {
+// Loop from 1 to n
+for(let i = 1; i <= n; i++) {
 
         // Check divisibility by both 3 and 5
         if(i % 3 === 0 && i % 5 === 0) {
@@ -48,3 +50,5 @@ var fizzBuzz = function(n) {
     return result;
 };
 console.log(fizzBuzz(15));
+// Time Complexity: O(n)
+// Space Complexity: O(n)
