@@ -82,3 +82,70 @@ var reverse = function(x) {
 
     return reverse * sign;
 };
+# Power of Two
+
+## Problem Statement
+Given an integer `n`, return `true` if it is a power of two. Otherwise, return `false`.
+
+A number is a power of two if it can be divided by 2 repeatedly until it becomes 1.
+
+---
+
+## Examples
+
+Input: n = 8  
+Output: true
+
+Input: n = 6  
+Output: false
+
+---
+
+## Approach
+
+- First check if the number is greater than 0.
+- Use a `while` loop to divide the number by 2 repeatedly.
+- If the number becomes `1`, then it is a power of two.
+- Otherwise, it is not.
+
+---
+
+## JavaScript Solution
+
+```javascript
+var isPowerOfTwo = function(n) {
+
+    if (n <= 0) {
+        return false;
+    }
+
+    while (n % 2 === 0) {
+        n = n / 2;
+    }
+
+    return n === 1;
+};
+```
+
+---
+
+## Concepts Used
+
+- Modulus Operator `%`
+- While Loop
+- Conditional Statements
+- Number Manipulation
+
+---
+
+## Time Complexity
+
+```text
+O(log n)
+```
+
+## Space Complexity
+
+```text
+O(1)
+```
