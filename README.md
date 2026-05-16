@@ -148,4 +148,37 @@ O(log n)
 
 ```text
 O(1)
+
 ```
+# Day 3 - Valid Anagram
+
+## Problem
+Given two strings `s` and `t`, return `true` if `t` is an anagram of `s`, otherwise return `false`.
+
+---
+
+## Example
+
+Input:
+"anagram", "nagaram"
+
+Output:
+true
+
+---
+
+## JavaScript Solution
+
+```javascript
+var isAnagram = function(s, t) {
+
+    if (s.length !== t.length) {
+        return false;
+    }
+
+    let str1 = s.split('').sort().join('');
+    let str2 = t.split('').sort().join('');
+
+    return str1 === str2;
+};
+
