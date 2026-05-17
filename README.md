@@ -238,3 +238,6 @@ var romanToInt = function(s) {
 
     return total;
 };
+
+## Majority Element
+Solved using HashMap (Map) approach in JavaScript to find the element appearing more than n/2 times.
