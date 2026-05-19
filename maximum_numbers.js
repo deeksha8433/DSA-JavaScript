@@ -18,3 +18,4 @@ var numberOfPairs = function(nums) {
     return [pairs, leftover];
 };
 console.log(numberOfPairs([1,3,2,1,3,2,2]));
+console.log(findMax([3, 7, 2, 9, 5]));
