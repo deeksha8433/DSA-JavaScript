@@ -241,3 +241,40 @@ var romanToInt = function(s) {
 
 ## Majority Element
 Solved using HashMap (Map) approach in JavaScript to find the element appearing more than n/2 times.
+
+
+# Longest Common Prefix
+
+## Problem
+Find the longest common prefix string among an array of strings.
+
+Example:
+
+Input:
+["flower","flow","flight"]
+
+Output:
+"fl"
+
+---
+
+## JavaScript Solution
+
+```javascript
+var longestCommonPrefix = function(strs) {
+
+    let prefix = strs[0];
+
+    for (let i = 1; i < strs.length; i++) {
+
+        while (strs[i].indexOf(prefix) !== 0) {
+            prefix = prefix.slice(0, -1);
+        }
+    }
+
+    return prefix;
+};
+
+console.log(
+    longestCommonPrefix(["flower","flow","flight"])
+);
