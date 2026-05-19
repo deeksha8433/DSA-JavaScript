@@ -278,3 +278,4 @@ var longestCommonPrefix = function(strs) {
 console.log(
     longestCommonPrefix(["flower","flow","flight"])
 );
+Updated DSA progress
