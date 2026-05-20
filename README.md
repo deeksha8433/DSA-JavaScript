@@ -279,3 +279,79 @@ console.log(
     longestCommonPrefix(["flower","flow","flight"])
 );
 Updated DSA progress
+
+# Maximum Number in Array
+
+## Problem
+Find the maximum number from an array.
+
+Example:
+
+Input:
+[3, 7, 2, 9, 5]
+
+Output:
+9
+
+---
+
+## JavaScript Solution
+
+```javascript
+function findMax(nums) {
+
+    let max = nums[0];
+
+    for (let i = 1; i < nums.length; i++) {
+
+        if (nums[i] > max) {
+            max = nums[i];
+        }
+    }
+
+    return max;
+}
+
+console.log(findMax([3, 7, 2, 9, 5]));
+
+# Integer to Roman
+
+## Problem
+Convert an integer into a Roman numeral.
+
+## Concepts Used
+- Arrays
+- Greedy Algorithm
+- Loops
+- String Concatenation
+
+## JavaScript Solution
+
+```js
+var intToRoman = function(num) {
+
+    let values = [
+        1000, 900, 500, 400,
+        100, 90, 50, 40,
+        10, 9, 5, 4, 1
+    ];
+
+    let symbols = [
+        "M", "CM", "D", "CD",
+        "C", "XC", "L", "XL",
+        "X", "IX", "V", "IV", "I"
+    ];
+
+    let result = "";
+
+    for (let i = 0; i < values.length; i++) {
+
+        while (num >= values[i]) {
+            result += symbols[i];
+            num -= values[i];
+        }
+    }
+
+    return result;
+};
+- Solved Integer to Roman problem in JavaScript
