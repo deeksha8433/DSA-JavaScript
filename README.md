@@ -468,3 +468,16 @@ function lengthOfLastWord(s) {
 
     return count;
 }
+
+# To Lower Case
+
+## Problem
+Given a string `s`, return the string after replacing every uppercase letter with the same lowercase letter.
+
+## JavaScript Solution
+
+```javascript
+function toLowerCaseString(s) {
+
+    return s.toLowerCase();
+}
