@@ -481,3 +481,40 @@ function toLowerCaseString(s) {
 
     return s.toLowerCase();
 }
+
+# 4Sum - LeetCode
+
+## Problem
+Find all unique quadruplets in an array whose sum equals the target.
+
+## Approach
+- Sort the array
+- Use two nested loops
+- Apply two-pointer technique
+- Skip duplicates for unique results
+
+## Time Complexity
+O(n³)
+
+## Space Complexity
+O(1) (excluding output array)
+
+## Concepts Used
+- Arrays
+- Sorting
+- Two Pointers
+- Nested Loops
+- Duplicate Handling
+
+## Example
+
+Input:
+nums = [1,0,-1,0,-2,2]
+target = 0
+
+Output:
+[
+  [-2,-1,1,2],
+  [-2,0,0,2],
+  [-1,0,0,1]
+]
